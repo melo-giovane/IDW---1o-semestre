@@ -1,0 +1,122 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to right, #011792, #b7aee9);
+  color: #a1a1a1;
+  width: 100%;
+}
+
+.header {
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.headerText {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  color: #f1f1f1;
+  font-size: 15px;
+  font-weight: semi-bold;
+  margin-left: auto;
+}
+
+.headerText h1, h2{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+.container {
+  border-radius: 8px;
+  background-color: #f1f1f1;
+  padding: 6px;
+  margin: 5px;
+  color: #1a1a1a;
+  max-width: 280px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  box-shadow: 9px 4px 8px rgba(0, 0, 0, 0.6);
+  padding-bottom: 30px;
+  transition: background-color 0.5s;
+}
+
+.strong {
+  font-weight: bold;
+  text-align: center;
+  margin: 10px;
+}
+
+.container:hover {
+  background-color: #fff;
+}
+
+.container h4 {
+  text-align: center;
+}
+
+.container a{ 
+  text-decoration: none;
+  color: #1a1a1a;
+  font-weight: bold;
+}
+
+.container a:hover{
+  color: #011792;
+  font-weight: bold;
+}
+
+.alerta {
+  text-align: center;
+  background-color: rgba(255, 0, 0, 0.7);
+  color: white;
+  margin: 5px;
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+  padding-bottom: 30px;
+  box-shadow: 9px 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+footer{
+  text-align: center;
+  color: #f1f1f1;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: fit-content;
+  place-self: center;
+  border-radius: 8px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-self: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.logo {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+}
