@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Botão cor</title>
+  </head>
+  <body>
+    <button onclick="cor()" style="border: none; border-radius: 4px; background-color: aqua; padding: 15px;">Mudar a cor do plano de fundo</button>
+    <script>
+      function cor() {
+        document.body.style.backgroundColor = 
+          document.body.style.backgroundColor === "red" ? "white" : "red";
+      }
+    </script>
+  </body>
+</html>

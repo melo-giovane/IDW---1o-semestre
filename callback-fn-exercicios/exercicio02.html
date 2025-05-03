@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>texto em <p></title>
+</head>
+<body style="background-color: #1a1a1a;">
+  <input type="text" name="texto" id="texto" placeholder="Digite seu texto aqui">
+  <button onclick="printar()" style="background-color: aqua; color: azure; cursor: pointer; border: none;">
+    printar texto
+  </button>
+  <p id="textoDigitado" style="color: #a1a1a1; font-size: larger;"></p>
+
+  <script>
+    function printar(){
+      document.getElementById('textoDigitado').innerText = document.getElementById('texto').value;
+    }
+    
+  </script>
+</body>
+</html>
