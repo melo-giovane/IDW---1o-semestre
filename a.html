@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form onsubmit="return exibir()">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="mensagem">Mensagem:</label><br>
+      <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea><br><br>
+
+      <input type="submit" value="Enviar">
+    </form>
+
+    <div id="nomeDisplay"></div>
+    <div id="emailDisplay"></div>
+    <div id="mensagemDisplay"></div>
+
+    <script>
+      function exibir() {
+        // Captura os valores dos campos de formulário quando o formulário é enviado
+        let nome = document.getElementById('nome').value;
+        let email = document.getElementById('email').value;
+        let mensagem = document.getElementById('mensagem').value;
+
+        // Exibe os valores nos elementos correspondentes
+        document.getElementById('nomeDisplay').innerHTML = `<h2>${nome}</h2>`;
+        document.getElementById('emailDisplay').innerHTML = `<p>${email}</p>`;
+        document.getElementById('mensagemDisplay').innerHTML = `<p>${mensagem}</p>`;
+
+        // Impede o envio do formulário (evita o recarregamento da página)
+        return false;
+      }
+    </script>
+  </body>
+</html>
+

@@ -5,29 +5,90 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Objetos</title>
   <style>
+    * {
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      height: 100vh;
+      background: linear-gradient(to bottom right, #1a1a1a, #a1a1a1);
+      background-color: #1a1a1a;
+      color: #fff;
+    }
+
+    header {
+      text-align: center;
+    }
+
+    .container {
+      width: fit-content;
+      padding: 20px;
+      justify-content: space-between;
+      text-align: center;
+      background-color: rgb(0, 0, 0, 0.6);
+      border-radius: 12px;
+    }
+
+    .container div{
+      padding: 2px;
+    }
+
+    .container button{
+      margin-top: 20px;
+      cursor: pointer;
+      padding: 12px;
+      font-weight: bold;
+      border: none;
+      border-radius: 12px;
+      
+    }
+
+    footer {
+      color: #1a1a1a;
+    }
   </style>
   <script src="script.js"></script>
 </head>
 <body>
-  <h1>Atividade de introdução ao desenvolvimento Web</h1>
+  <header>
+    <h1>Atividade de introdução ao desenvolvimento Web</h1>
+    <h2>
+      Cálcuo de subtração ou adição
+    </h2>
+  </header>
   <div class="container">
+    <h2>Insira os dados aqui:</h2>
     <div>
-      <label for="num1">Número 1</label>
+      <label for="num1">Número 1:</label>
       <input type="text" name="num1" id="num1">
   
     </div>
     <div>
-      <label for="operacao">Operação (adição ou subetração)</label>
-      <input type="text" name="operacao" id="operacao">
+      <label for="operacao">Operação:</label>
+      <input type="text" placeholder="adição ou subtração" name="operacao" id="operacao">
   
     </div>
     <div>
-      <label for="num2">Número 2</label>
+      <label for="num2">Número 2:</label>
       <input type="text" name="num2" id="num2">
     </div>
 
+    <button type="submit">
+      calcular
+    </button>
   </div>
-  
+  <div class="container">
+    <h2>Resultado</h2>
+    <h2 id="resultado">Seu resultado aparecerá aqui</h2>
+  </div>
+  <footer>
+    <p>&copy Giovane Melo - 2025</p>
+  </footer>
 </body>
 </html>

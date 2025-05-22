@@ -1,4 +1,4 @@
-addEventListener("DOMContentLoaded", () => {
+Document.addEventListener("DOMContentLoaded", () => {
   num1 = document.getElementById("num1").value;
   operacao = document.getElementById("operacao").value;
   num2 = document.getElementById("num2").value;
@@ -8,7 +8,12 @@ addEventListener("DOMContentLoaded", () => {
     alert("Preencha o numero 1, a operação se é adição ou subtração e depois o numero 2");
   } */
 
-
+  document.addEventListener('click', (e) => {
+    if (e.target.tagname === 'BUTTON')
+    {
+      
+    }
+  })
 
   function adi(){
     resultado = num1 + num2;
