@@ -1,11 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
   let frutas = ["Banana", "Maça", "Morango", "Uva"];
+
   const botaoInserir = document.getElementById("botaoInserir");
   const botaoRemover = document.getElementById("botaoRemover");
+  const botaoOrdenar = document.getElementById("botaoOrdenar");
 
   botaoInserir.addEventListener("click", adicionar);
   botaoRemover.addEventListener("click", remover);
-
+  botaoOrdenar.addEventListener("click", ordenar);
+  
   listarFrutas();
 
   function listarFrutas() {
@@ -42,4 +45,11 @@ document.addEventListener("DOMContentLoaded", () => {
       input.value = "";
     }
   }
+
+  function ordenar(){
+    frutas = frutas.sort();
+    listarFrutas();
+  }
+
+
 });
